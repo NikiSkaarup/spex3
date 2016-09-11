@@ -8,9 +8,34 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <title>Cupcake - Shop</title>
+    <%@ include file="styles.jsp" %>
 </head>
 <body>
+<div class="container">
+    <%@ include file="header.jsp" %>
+    <div class="row">
+        <div class="col-8">
+            <form action="shop" method="post">
+                <label for="toppings">Toppings</label>
+                <select name="topping" id="toppings" title="toppings">
+                    ${requestScope.toppings}
+                </select>
+                <label for="bottoms">Bottoms</label>
+                <select name="bottom" id="bottoms" title="bottoms">
+                    ${requestScope.bottoms}
+                </select>
+                <input name="amount" type="text" placeholder="amount" required/>
+                <button name="submit" type="submit" value="shop">Add to cart</button>
+            </form>
+        </div>
+        <div class="col-4">
+            ${requestScope.sideCart}
+        </div>
+    </div>
+</div>
 
+<%@ include file="scripts.jsp" %>
 </body>
 </html>

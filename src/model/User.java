@@ -14,9 +14,10 @@ public class User {
     public User() {
     }
 
-    public User(int id, String username) {
+    public User(int id, String username, int balance) {
         this.id = id;
         this.username = username;
+        this.balance = balance;
     }
 
     public int getId() {
@@ -33,5 +34,18 @@ public class User {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+
+    public void setBalance(int balance) {
+        this.balance = balance;
+    }
+
+    @Override
+    public String toString() {
+        return id + "," + username + "," + balance;
     }
 }

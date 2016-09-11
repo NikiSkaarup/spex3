@@ -5,35 +5,35 @@ package model;
  *
  * @author Niki
  */
-public class Orderline {
+public class OrderLine {
 
-    private int cupcakeId;
-    private int orderId;
+    private Cupcake cupcake;
+    private Order order;
     private int amount;
 
-    public Orderline() {
+    public OrderLine() {
     }
 
-    public Orderline(int cupcakeId, int orderId, int amount) {
-        this.cupcakeId = cupcakeId;
-        this.orderId = orderId;
+    public OrderLine(Cupcake cupcake, Order order, int amount) {
+        this.cupcake = cupcake;
+        this.order = order;
         this.amount = amount;
     }
 
-    public int getCupcakeId() {
-        return cupcakeId;
+    public Cupcake getCupcake() {
+        return cupcake;
     }
 
-    public void setCupcakeId(int cupcakeId) {
-        this.cupcakeId = cupcakeId;
+    public void setCupcake(Cupcake cupcake) {
+        this.cupcake = cupcake;
     }
 
-    public int getOrderId() {
-        return orderId;
+    public Order getOrder() {
+        return order;
     }
 
-    public void setOrderId(int orderId) {
-        this.orderId = orderId;
+    public void setOrder(Order order) {
+        this.order = order;
     }
 
     public int getAmount() {

@@ -8,20 +8,15 @@ package model;
 public class Order {
 
     private int id;
-    private int userId;
+    private User user;
     private boolean pickedUp;
 
     public Order() {
     }
 
-    public Order(int id, int userId, boolean pickedUp) {
+    public Order(int id, User user, boolean pickedUp) {
         this.id = id;
-        this.userId = userId;
-        this.pickedUp = pickedUp;
-    }
-
-    public Order(int userId, boolean pickedUp) {
-        this.userId = userId;
+        this.user = user;
         this.pickedUp = pickedUp;
     }
 
@@ -33,12 +28,12 @@ public class Order {
         this.id = id;
     }
 
-    public int getUserId() {
-        return userId;
+    public User getUser() {
+        return user;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public boolean isPickedUp() {

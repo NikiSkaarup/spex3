@@ -39,6 +39,7 @@ html {
 
 /*setting up font sizes and base font family*/
 body {
+  margin: 0;
   letter-spacing: 0.01em;
   line-height: 1.6;
   font-size: 1.5em;
@@ -129,11 +130,16 @@ h6 {
 
 /* .row */
 .row {
-  margin-top: 2.0833%;
-  padding: 0 1.04165%;
+  margin-bottom: 2.0833%;
+  padding: 0 1.5em;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+[class^='col-'] > .row, [class*=" col-"] > .row {
+  margin-left: -1.5em;
+  margin-right: -1.5em;
 }
 
 /* col */
@@ -206,12 +212,12 @@ h6 {
 */
 @media screen and (max-width: 768px) {
   .row {
-    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .row > [class^='col-'], .row > [class*=" col-"] {
     width: 100%;
-    margin-top: 2.0833%;
+    margin-bottom: 2.0833%;
     margin-left: 0;
   }
 }
@@ -222,7 +228,7 @@ h6 {
 
 .btn, button, [type=submit] {
   overflow: hidden;
-  margin: 10px;
+  margin: 8px 0;
   padding: 12px 12px;
   cursor: pointer;
   -webkit-user-select: none;
@@ -234,7 +240,6 @@ h6 {
   text-decoration: none !important;
   text-transform: uppercase;
   border: 0 none;
-  border-radius: 4px;
   color: #FFFFFF;
   background: #333030;
   font-family: inherit;
@@ -330,6 +335,10 @@ textarea, textarea[type=text] {
     height: 100px;
     padding: 14px 20px;
     resize: none;
+}
+
+form button {
+    display: block;
 }
 
 /*------------------------------------------------------------

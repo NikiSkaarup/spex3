@@ -1,0 +1,58 @@
+
+body {
+    padding: 50px 0;
+    background-color: #444;
+}
+
+.container {
+    background-color: #fafafa;
+}
+
+#menu {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+}
+
+#menu > li {
+}
+
+#menu > li > a {
+    display: block;
+    margin: 0;
+    background-color: #2a82da;
+}
+
+#sideCart {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#sideCart > li {
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: solid 1px rgba(22,22,22,.5);
+}
+
+#sideCart > li > span {
+    display: block;
+    width: 50%;
+}
+
+#sideCart > li > span.top {
+
+}
+
+#sideCart > li > span.bot {
+}
+
+#sideCart > li > span.amount {
+}
+
+#sideCart > li > span.price {
+}
+
+

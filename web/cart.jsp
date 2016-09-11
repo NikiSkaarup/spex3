@@ -1,14 +1,15 @@
 <%--
   Created by IntelliJ IDEA.
   User: Niki
-  Date: 2016-09-10
-  Time: 6:21 PM
---%><%@ page contentType="text/html;charset=UTF-8" language="java" %><%--
---%><!doctype html>
+  Date: 2016-09-11
+  Time: 4:34 PM
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Cupcake - Home</title>
+    <title>Cupcake - Cart</title>
     <%@ include file="styles.jsp" %>
 </head>
 <body>

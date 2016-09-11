@@ -1,8 +1,10 @@
 package data;
 
+import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
+
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
+
 
 /**
  * Created by Niki on 2016-09-10.
@@ -13,21 +15,27 @@ public class DB {
 
     private static String driver = "com.mysql.jdbc.Driver";
     private static String ip = "10.0.87.2";
-    private static int port = 3306;
     private static String db = "spex3";
-    private static Object[] urlData = {ip, port, db};
-    private static String url = String.format("jdbc:mysql://%1$s:%2$s/%3$s", urlData);
+    private static String url = "jdbc:mysql://" + ip + ":3306/" + db;
     private static String user = "test";
     private static String password = "password";
 
     public static Connection getConnection() {
         Connection conn = null;
         try {
-            Class.forName(driver);
-            conn = DriverManager.getConnection(url,user,password);
-        } catch (ClassNotFoundException | SQLException ex) {
-            ex.printStackTrace();
+//            Context context = new InitialContext();
+//            DataSource dataSource = (DataSource) context.lookup("java:comp/env/jdbc/myDB");
+            MysqlDataSource dataSource = new MysqlDataSource();
+            dataSource.setUser(user);
+            dataSource.setPassword(password);
+            dataSource.setServerName(ip);
+            dataSource.setDatabaseName(db);
+//            dataSource.setUrl(url);
+            conn = dataSource.getConnection();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
+
         return conn;
     }
 

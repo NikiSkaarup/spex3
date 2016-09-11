@@ -1,5 +1,7 @@
 package model;
 
+import java.math.BigDecimal;
+
 /**
  * Created by Niki on 2016-09-10.
  *
@@ -11,6 +13,7 @@ public class Part {
     private String name;
     private boolean topping;
     private boolean bottom;
+    private BigDecimal price;
 
     public Part() {
     }
@@ -22,10 +25,13 @@ public class Part {
         this.bottom = bottom;
     }
 
-    public Part(String name, boolean topping, boolean bottom) {
+    public Part(int id, String name, boolean topping, boolean bottom, BigDecimal
+            price) {
+        this.id = id;
         this.name = name;
         this.topping = topping;
         this.bottom = bottom;
+        this.price = price;
     }
 
     public int getId() {
@@ -58,5 +64,13 @@ public class Part {
 
     public void setBottom(boolean bottom) {
         this.bottom = bottom;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
     }
 }

@@ -8,21 +8,16 @@ package model;
 public class Cupcake {
 
     private int id;
-    private int toppingId;
-    private int bottomId;
+    private Part topping;
+    private Part bottom;
 
     public Cupcake() {
     }
 
-    public Cupcake(int id, int toppingId, int bottomId) {
+    public Cupcake(int id, Part topping, Part bottom) {
         this.id = id;
-        this.toppingId = toppingId;
-        this.bottomId = bottomId;
-    }
-
-    public Cupcake(int toppingId, int bottomId) {
-        this.toppingId = toppingId;
-        this.bottomId = bottomId;
+        this.topping = topping;
+        this.bottom = bottom;
     }
 
     public int getId() {
@@ -33,19 +28,19 @@ public class Cupcake {
         this.id = id;
     }
 
-    public int getToppingId() {
-        return toppingId;
+    public Part getTopping() {
+        return topping;
     }
 
-    public void setToppingId(int toppingId) {
-        this.toppingId = toppingId;
+    public void setTopping(Part topping) {
+        this.topping = topping;
     }
 
-    public int getBottomId() {
-        return bottomId;
+    public Part getBottom() {
+        return bottom;
     }
 
-    public void setBottomId(int bottomId) {
-        this.bottomId = bottomId;
+    public void setBottom(Part bottom) {
+        this.bottom = bottom;
     }
 }
