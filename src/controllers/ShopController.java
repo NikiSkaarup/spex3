@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -151,8 +152,7 @@ public class ShopController extends HttpServlet {
             sb.append("</span><span class='amount'>Amount: ");
             sb.append(orderLine.getAmount());
             sb.append("</span><span class='price'>Price: ");
-            sb.append(orderLine.getCupcake().getTopping().getPrice().add
-                    (orderLine.getCupcake().getBottom().getPrice()));
+            sb.append(orderLine.getTotalPrice());
             sb.append("</span></li>");
         }
         sb.append("</ul>");
@@ -173,12 +173,10 @@ public class ShopController extends HttpServlet {
     }
 
     private boolean cupcakeMatch(OrderLine line1, OrderLine line2) {
-        if (line1.getCupcake().getTopping().getName()
+        return line1.getCupcake().getTopping().getName()
                 .equals(line2.getCupcake().getTopping().getName())
                 && line1.getCupcake().getBottom().getName()
-                .equals(line2.getCupcake().getBottom().getName()))
-            return true;
-        return false;
+                .equals(line2.getCupcake().getBottom().getName());
     }
 
 }

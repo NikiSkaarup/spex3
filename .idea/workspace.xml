@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0554ba2-f8ae-4e86-af2c-3757b60dc8cc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dictionaries/Nikis.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/spex3_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/spex3_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/fdecbb05-5a2c-44d7-b253-24c5ae1c466f.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/fdecbb05-5a2c-44d7-b253-24c5ae1c466f.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spex3.iml" afterPath="$PROJECT_DIR$/spex3.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/LoginController.java" afterPath="$PROJECT_DIR$/src/controllers/LoginController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/ShopController.java" afterPath="$PROJECT_DIR$/src/controllers/ShopController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/DB.java" afterPath="$PROJECT_DIR$/src/data/DB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Cupcake.java" afterPath="$PROJECT_DIR$/src/model/Cupcake.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Order.java" afterPath="$PROJECT_DIR$/src/model/Order.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Orderline.java" afterPath="$PROJECT_DIR$/src/model/Orderline.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Part.java" afterPath="$PROJECT_DIR$/src/model/Part.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/User.java" afterPath="$PROJECT_DIR$/src/model/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/wing.css" afterPath="$PROJECT_DIR$/web/css/wing.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/wing.min.css" afterPath="$PROJECT_DIR$/web/css/wing.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/shop.jsp" afterPath="$PROJECT_DIR$/web/shop.jsp" />
     </list>
     <ignored path="spex3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,43 +48,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShopController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ShopController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/ShopController.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="800">
+              <caret line="157" column="27" selection-start-line="157" selection-start-column="27" selection-end-line="157" selection-end-column="27" />
+              <folding>
+                <marker date="1473614648929" expanded="true" signature="2048:2091" ph="SELECT id, n... parts" />
+                <marker date="1473614648929" expanded="true" signature="3808:3892" ph="SELECT id, n... parts" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderLine.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/OrderLine.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="600">
-              <caret line="170" column="0" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
-              <folding>
-                <marker date="1473614215293" expanded="true" signature="2019:2062" ph="SELECT id, n... parts" />
-                <marker date="1473614215293" expanded="true" signature="3779:3863" ph="SELECT id, n... parts" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cupcake.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Cupcake.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding>
-                <element signature="e#373#374#0" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Part.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Part.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-              <folding>
-                <element signature="e#279#280#0" expanded="true" />
-                <element signature="e#301#302#0" expanded="true" />
-                <element signature="e#1307#1308#0" expanded="true" />
-                <element signature="e#1335#1336#0" expanded="true" />
-              </folding>
+              <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,7 +76,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="211">
               <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1473612555647" expanded="true" signature="113:198" ph="{...}" />
+                <marker date="1473612555647" expanded="true" signature="419:514" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,7 +137,6 @@
         <option value="$PROJECT_DIR$/src/controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/src/model/Order.java" />
         <option value="$PROJECT_DIR$/src/model/Orderline.java" />
-        <option value="$PROJECT_DIR$/src/model/OrderLine.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/shop.jsp" />
         <option value="$PROJECT_DIR$/web/cart.jsp" />
@@ -177,6 +144,7 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/model/Part.java" />
         <option value="$PROJECT_DIR$/src/model/Cupcake.java" />
+        <option value="$PROJECT_DIR$/src/model/OrderLine.java" />
         <option value="$PROJECT_DIR$/src/controllers/ShopController.java" />
       </list>
     </option>
@@ -815,12 +783,12 @@
       <option name="presentableId" value="Default" />
       <updated>1473524494001</updated>
       <workItem from="1473524501015" duration="3268000" />
-      <workItem from="1473528084105" duration="25232000" />
+      <workItem from="1473528084105" duration="25669000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28500000" />
+    <option name="totallyTimeSpent" value="28937000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2906" height="1566" extended-state="6" />
@@ -835,7 +803,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977968" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977968" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31840795" sideWeight="0.49814814" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31840795" sideWeight="0.49814814" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.4946695" order="0" side_tool="false" content_ui="combo" />
@@ -903,8 +871,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1473614215293" expanded="true" signature="2019:2062" ph="SELECT id, n... parts" />
-            <marker date="1473614215293" expanded="true" signature="3779:3863" ph="SELECT id, n... parts" />
+            <marker date="1473614648929" expanded="true" signature="2048:2091" ph="SELECT id, n... parts" />
+            <marker date="1473614648929" expanded="true" signature="3808:3892" ph="SELECT id, n... parts" />
           </folding>
         </state>
       </provider>
@@ -1171,14 +1139,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/OrderLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -1249,7 +1209,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1473612555647" expanded="true" signature="113:198" ph="{...}" />
+            <marker date="1473612555647" expanded="true" signature="419:514" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Cupcake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1750">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Part.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+          <folding>
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#1307#1308#0" expanded="true" />
+            <element signature="e#1335#1336#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/ShopController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="157" column="27" selection-start-line="157" selection-start-column="27" selection-end-line="157" selection-end-column="27" />
+          <folding>
+            <marker date="1473614648929" expanded="true" signature="2048:2091" ph="SELECT id, n... parts" />
+            <marker date="1473614648929" expanded="true" signature="3808:3892" ph="SELECT id, n... parts" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1261,38 +1259,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Part.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-          <folding>
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#1307#1308#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Cupcake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/ShopController.java">
+    <entry file="file://$PROJECT_DIR$/src/model/OrderLine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
-          <caret line="170" column="0" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
-          <folding>
-            <marker date="1473614215293" expanded="true" signature="2019:2062" ph="SELECT id, n... parts" />
-            <marker date="1473614215293" expanded="true" signature="3779:3863" ph="SELECT id, n... parts" />
-          </folding>
+          <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>

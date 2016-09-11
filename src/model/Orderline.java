@@ -1,5 +1,7 @@
 package model;
 
+import java.math.BigDecimal;
+
 /**
  * Created by Niki on 2016-09-10.
  *
@@ -43,4 +45,11 @@ public class OrderLine {
     public void setAmount(int amount) {
         this.amount = amount;
     }
+
+    public BigDecimal getTotalPrice() {
+        return (cupcake.getTopping().getPrice()
+                .add(cupcake.getBottom().getPrice()))
+                .multiply(new BigDecimal(amount));
+    }
+
 }
