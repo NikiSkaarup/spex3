@@ -16,6 +16,7 @@ public class Part {
     private BigDecimal price;
 
     public Part() {
+        id = 0;
     }
 
     public Part(int id, String name, boolean topping, boolean bottom) {

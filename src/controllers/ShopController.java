@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.BreakIterator;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,14 +30,16 @@ public class ShopController extends HttpServlet {
             response) throws ServletException, IOException {
 
         List<OrderLine> orderLines = new ArrayList<>();
-        Object cart = request.getSession().getAttribute("cart");
+        Object o = request.getSession().getAttribute("cart");
 
         int top = Integer.parseInt(request.getParameter("topping"));
         int bot = Integer.parseInt(request.getParameter("bottom"));
         int amount = Integer.parseInt(request.getParameter("amount"));
 
         try {
-            orderLines.addAll((List<OrderLine>) cart);
+            if (o != null && orderLines.getClass() == o.getClass()) {
+                orderLines.addAll((List<OrderLine>) o);
+            }
         } catch (Exception ignored) {
         }
 
@@ -47,7 +50,7 @@ public class ShopController extends HttpServlet {
         cupcake.setBottom(getPart(bot));
         orderLine.setCupcake(cupcake);
         orderLine.setAmount(amount);
-        orderLines.add(orderLine);
+        incrementOrAdd(orderLines, orderLine);
 
         request.getSession().setAttribute("cart", orderLines);
         response.sendRedirect("/shop");
@@ -154,6 +157,28 @@ public class ShopController extends HttpServlet {
         }
         sb.append("</ul>");
         return sb.toString();
+    }
+
+    private void incrementOrAdd(List<OrderLine> orderLines, OrderLine
+            orderLine) {
+
+        for (OrderLine line : orderLines) {
+            if (cupcakeMatch(line, orderLine)) {
+                line.setAmount(line.getAmount() + orderLine.getAmount());
+                return;
+            }
+        }
+
+        orderLines.add(orderLine);
+    }
+
+    private boolean cupcakeMatch(OrderLine line1, OrderLine line2) {
+        if (line1.getCupcake().getTopping().getName()
+                .equals(line2.getCupcake().getTopping().getName())
+                && line1.getCupcake().getBottom().getName()
+                .equals(line2.getCupcake().getBottom().getName()))
+            return true;
+        return false;
     }
 
 }
