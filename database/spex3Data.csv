@@ -1,0 +1,14 @@
+id,name,topping,bottom,price
+1,Chocolate,1,1,5.00
+2,Vanilla,0,1,5.00
+3,Nutmeg,0,1,5.00
+4,Pistacio,0,1,6.00
+5,Almond,0,1,7.00
+6,Blueberry,1,0,5.00
+7,Rasberry,1,0,5.00
+8,Crispy,1,0,6.00
+9,Strawberry,1,0,6.00
+10,Rum/Raisin,1,0,7.00
+11,Orange,1,0,8.00
+12,Lemon,1,0,8.00
+13,"Blue cheese",1,0,9.00
